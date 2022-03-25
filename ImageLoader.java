@@ -11,13 +11,14 @@ public class ImageLoader {
     public static BufferedImage[][] readyImages(String imageDirName){
         int index = 0;
         BufferedImage[][] animationImages;
-		animationImages = new BufferedImage[151+1][10];
+		    animationImages = new BufferedImage[151+1][10];
         File[] imageFolders = (new File(imageDirName)).listFiles(new FileFilter() {
             @Override
             public boolean accept(File file) {
                 return !file.isHidden() && !file.getName().startsWith(".");
             }
         });
+
         int id = 0;
         for (File folder : imageFolders){
             /* Only 152 images. Last index is 151. */

@@ -5,7 +5,17 @@ A game behaving like 2048 but with Pokemon.
 
 Install [Bazel](https://bazel.build/install).
 
+Then, clone the repo and cd into it.
+
+```sh
+git clone https://github.com/Vui-Chee/2048-with-Pokemon.git
+cd 2048-with-Pokemon
+```
+
+
 ### Build and run:
+
+Finally, to run just:
 
 ```sh
 bazel run //:2048

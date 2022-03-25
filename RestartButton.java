@@ -1,3 +1,5 @@
+package com.example.pokemon2048;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Dimension;

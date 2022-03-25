@@ -1,3 +1,5 @@
+package com.example.pokemon2048;
+
 import java.awt.image.BufferedImage;
 
 public class PokemonCell {

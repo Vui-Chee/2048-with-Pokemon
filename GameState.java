@@ -1,3 +1,5 @@
+package com.example.pokemon2048;
+
 public class GameState {
    
     public static final int WIN_ID = 151;

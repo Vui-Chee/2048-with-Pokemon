@@ -22,7 +22,6 @@ public class ImageLoader {
         for (File folder : imageFolders){
             /* Only 152 images. Last index is 151. */
             int folderIndex = Integer.parseInt(folder.getName()) - 1;
-            /* System.out.println(folderIndex); */
             try {
                 String imageDirPath = imageDirName + "/" + folder.getName();
                 File[] animationImageFiles = (new File(imageDirPath)).listFiles(new FileFilter(){
@@ -36,7 +35,6 @@ public class ImageLoader {
                         System.out.println("Name length of image too short.");
                     }
                     int imageIndex = f.getName().charAt(0) - 48;
-                    /* System.out.println(imageIndex); */
                     animationImages[folderIndex][imageIndex] = ImageIO.read(f);
                 }
             } catch(IOException e){
